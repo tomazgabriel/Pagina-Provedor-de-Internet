@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Internet ilimitada</title>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
@@ -17,6 +17,41 @@
 
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!--Logo-->
+            <a class="navbar-brand" href="#"><img src="" alt=""></a>
+
+            <!--Menu sanduíche:exibido em smarthphones-->
+            <button class="navbar-toggler" type="button" data-toogle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Opções Menu-->
+            <div class="collapse navbar-collapse bg-dark" id="navbarNav" style="z-index:9999">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Página inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quem-somos">Quem somos</a>
+                    </li>
+                    <!--Menu suspenso-->
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toogle="dropdown">
+                            Planos de internet
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#planos">Alfa</a>
+                            <a class="dropdown-item" href="#planos">Beta</a>
+                        </ul>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>

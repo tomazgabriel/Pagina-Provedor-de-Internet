@@ -1,0 +1,19 @@
+nav{
+    min-height: 80px;
+}
+
+td img{
+    width: 25px;
+    height: 25px;
+}
+
+#quem-somos{
+    min-height: 600px;
+    background-image: url('/dados/img/computer.jpg');
+    background-color: #000;
+}
+
+.sobreposicao{
+    min-height: 600px;
+    background-color: rgba(0, 0, 0, 0.7);
+}

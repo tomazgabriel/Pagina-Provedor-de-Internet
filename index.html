@@ -6,6 +6,9 @@
     <title>Internet ilimitada</title>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+    <link href="starter-template.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="dados/css/estilo.css">
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
@@ -19,44 +22,38 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <!--Logo-->
-            <a class="navbar-brand" href="#"><img src="" alt=""></a>
-
-            <!--Menu sanduíche:exibido em smarthphones-->
-            <button class="navbar-toggler" type="button" data-toogle="collapse" data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Internet</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-
-            <!--Opções Menu-->
-            <div class="collapse navbar-collapse bg-dark" id="navbarNav" style="z-index:9999">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Página inicial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#quem-somos">Quem somos</a>
-                    </li>
-                    <!--Menu suspenso-->
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toogle="dropdown">
-                            Planos de internet
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#planos">Alfa</a>
-                            <a class="dropdown-item" href="#planos">Beta</a>
-                        </ul>
-                    </div>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="O que deseja?">
-                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
-                </form>
+      
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Página Inicial <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#quem-somos">Quem Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Fale Conosco</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Planos de Internet</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#planos">Alfa</a>
+                    <a class="dropdown-item" href="#planos">Beta</a>
+                    <a class="dropdown-item" href="#planos">Gama</a>
+                  </div>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+              </form>
             </div>
-        </nav>
+          </nav>
     </header>
     <!--Conteúdo principal-->
     <main>
@@ -89,6 +86,17 @@
         </section>
         <section class="container pb-5 text-center" id="planos">
             <h1 class="p-5">Planos</h1>
+            <script>
+                let semana = ['Domingo','Segunda-Feira','Terça-Feira','Quarta-Feira','Quinta-Feira','Sexta-Feira','Sábado'];
+                let d = new Date();
+                let numero_dia = d.getDay();
+
+                let dia = semana[numero_dia];
+                let mensagem = '<div class="alert alert-success" role="alert"><strong>PROMOÇÃO!</strong> Assine só hoje e ganhe um desconto de 30%!</div>';
+                if(dia == "Sexta-Feira"){
+                    document.write(mensagem);
+                }
+            </script>
             <div class="row">
                 <div class="col-12 col-md-3">
                     <div class="card">
